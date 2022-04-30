@@ -1,0 +1,24 @@
+.footer {
+    background-color: var(--footer-bg-color);
+    color: white;
+    padding: 3rem 0;
+}
+.footer .link {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+.footer .link:hover, .footer span {
+    color: var(--main-color);
+}
+.fa-icon {
+    background-color: var(--footer-icon-color);
+    font-size: 1.5rem;
+}
+.fa-icon:hover {
+    background-color: var(--hover-green-color);
+}
+.footer span {
+    font-family: 'Salsa', cursive;
+    font-weight: 500;
+}

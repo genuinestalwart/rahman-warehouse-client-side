@@ -1,5 +1,5 @@
 .header {
-    background-color: #C2F9BB;
+    background-color: var(--main-color);
     height: 4rem;
 }
 h1 {
@@ -8,7 +8,7 @@ h1 {
     font-size: 1.5rem;
 }
 .toggle-btn:focus {
-    box-shadow: 0 0 0 0.125rem #20B2AA;
+    box-shadow: 0 0 0 0.125rem var(--active-link-border-color);
 }
 
 @media only screen and (min-width: 768px) {
