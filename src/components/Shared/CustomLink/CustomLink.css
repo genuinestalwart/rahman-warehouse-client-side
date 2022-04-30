@@ -1,0 +1,21 @@
+.active, .link {
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    font-weight: 700;
+    padding: 0 0.75rem;
+}
+.active {
+    color: #339999;
+}
+.link {
+    color: #64748b;
+}
+.link:hover {
+    color: #EF767A;
+}
+
+@media only screen and (min-width: 768px) {
+    .active {
+        border-bottom: 2px solid #20B2AA;
+    }
+}

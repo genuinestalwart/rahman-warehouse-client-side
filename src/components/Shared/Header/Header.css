@@ -1,0 +1,21 @@
+.header {
+    background-color: #C2F9BB;
+    height: 4rem;
+}
+h1 {
+    color: #334155;
+    font-family: 'Salsa', cursive;
+    font-size: 1.5rem;
+}
+.toggle-btn:focus {
+    box-shadow: 0 0 0 0.125rem #20B2AA;
+}
+
+@media only screen and (min-width: 768px) {
+    .header {
+        padding: 0 4rem;
+    }
+    h1 {
+        font-size: 2.25rem;
+    }
+}
