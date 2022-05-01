@@ -3,7 +3,7 @@ import './App.css';
 import AddItem from './components/AddItem/AddItem';
 import Blogs from './components/Blogs/Blogs';
 import Banner from './components/Home/Banner/Banner';
-import Items from './components/Home/Items/Items';
+import HomeItems from './components/Home/HomeItems/HomeItems';
 import Inventory from './components/Inventory/Inventory';
 import Login from './components/Login/Login';
 import MyItems from './components/MyItems/MyItems';
@@ -21,7 +21,7 @@ function App() {
 					<Route path='/' element={
 						<div>
 							<Banner></Banner>
-							<Items></Items>
+							<HomeItems></HomeItems>
 						</div>
 					}></Route>
 					<Route path='/inventory' element={<Inventory></Inventory>}></Route>
