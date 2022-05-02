@@ -5,7 +5,7 @@ import { Nav, Navbar } from 'react-bootstrap';
 import CustomLink from '../CustomLink/CustomLink';
 
 const Header = () => {
-    const style = { backgroundColor: '#C2F9BB', padding: '0.75rem 0' };
+    const style = { backgroundColor: 'var(--main-color)', padding: '0.75rem 0' };
 
     return (
         <header className='align-items-center d-flex header justify-content-between'>

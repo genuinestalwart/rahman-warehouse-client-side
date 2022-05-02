@@ -1,20 +1,17 @@
-h2 {
-    font-family: 'Salsa', cursive;
-}
-.items-container {
+.inventory {
     padding: 0 2rem;
 }
-.manage-inventory .link {
+.add-new-item .link {
     background-color: var(--icon-bg-color);
     color: black;
 }
-.manage-inventory .link:hover {
+.add-new-item .link:hover {
     background-color: var(--main-color);
     color: var(--active-link-color);
 }
 
 @media only screen and (min-width: 768px) {
-    .items-container {
+    .inventory {
         padding: 0 4rem;
     }
 }

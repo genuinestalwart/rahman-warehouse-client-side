@@ -1,10 +1,10 @@
 .card {
-    border-color: var(--hover-green-color);
+    border-color: var(--icon-bg-color);
     border-width: 2px;
 }
 .card:hover {
-    border-color: var(--hover-green-color);
-    outline: var(--hover-green-color) solid 3px;
+    border-color: var(--icon-bg-color);
+    outline: var(--icon-bg-color) solid 3px;
 }
 .card-title {
     font-family: 'Salsa', cursive;
@@ -14,6 +14,6 @@ span {
     font-weight: 700;
 }
 .button, .button:hover, .button:focus {
-    background-color: var(--hover-green-color);
+    background-color: var(--icon-bg-color);
     color: black;
 }

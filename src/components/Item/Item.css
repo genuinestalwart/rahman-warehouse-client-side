@@ -1,0 +1,8 @@
+.delete-button {
+    background-color: var(--icon-bg-color);
+    color: var(--white-color);
+}
+.delete-button:hover, .delete-button:focus {
+    background-color: var(--main-color);
+    color: var(--active-link-color);
+}

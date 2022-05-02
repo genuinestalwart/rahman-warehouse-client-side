@@ -5,10 +5,10 @@
     padding: 0 0.75rem;
 }
 .active {
-    color: var(--footer-bg-color);
+    color: var(--active-link-color);
 }
 .header .link {
-    color: var(--custom-link-color);
+    color: var(--white-color);
 }
 .header .link:hover {
     color: var(--hover-red-color);
@@ -16,6 +16,6 @@
 
 @media only screen and (min-width: 768px) {
     .active {
-        border-bottom: 2px solid var(--active-link-border-color);
+        border-bottom: 2px solid var(--active-link-color);
     }
 }

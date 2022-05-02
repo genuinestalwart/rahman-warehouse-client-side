@@ -8,7 +8,9 @@ const HomeItems = () => {
     const [items, setItems] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/inventory?length=6')
+        const start = Math.floor(Math.random() * 35);
+
+        fetch(`http://localhost:5000/inventory?start=${start}`)
             .then(res => res.json())
             .then(data => setItems(data));
     }, []);
@@ -17,10 +19,10 @@ const HomeItems = () => {
         <section>
             <h2 className='fw-bold my-5 text-center'>Inventory</h2>
 
-            <Container fluid style={{ padding: '0 4rem' }}>
+            <Container className='items-container' fluid>
                 <Row className='g-5' xs={1} md={3}>
                     {
-                        items.map(item => <HomeItem key={item._id} item={item}></HomeItem>)
+                        items.map(item => <HomeItem key={item._id} homeItem={item}></HomeItem>)
                     }
                 </Row>
             </Container>

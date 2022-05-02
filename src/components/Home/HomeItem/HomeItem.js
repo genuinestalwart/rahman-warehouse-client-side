@@ -2,8 +2,8 @@ import React from 'react';
 import './HomeItem.css';
 import { Button, Card, Col } from 'react-bootstrap';
 
-const HomeItem = ({ item }) => {
-    const { name, image, description, price, quantity, supplier } = item;
+const HomeItem = ({ homeItem }) => {
+    const { name, image, description, price, quantity, supplier } = homeItem;
 
     return (
         <Col>

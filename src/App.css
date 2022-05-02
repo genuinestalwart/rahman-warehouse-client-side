@@ -1,9 +1,8 @@
 :root {
-    --main-color: #C2F9BB;
+    --main-color: #4169E1;
     --hover-red-color: #EF767A;
-    --hover-green-color: #A5D49F;
-    --custom-link-color: #64748b;
-    --footer-bg-color: #1B998B;
-    --footer-icon-color: #6BBDB4;
-    --active-link-border-color: #20B2AA;
+    --hover-blue-color: #3759BF;
+    --white-color: #E3E9FB;
+    --icon-bg-color: #849EEC;
+    --active-link-color: #00E6E6;
 }

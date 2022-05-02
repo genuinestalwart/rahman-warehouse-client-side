@@ -1,24 +1,23 @@
 .footer {
-    background-color: var(--footer-bg-color);
-    color: white;
+    background-color: var(--main-color);
+    color: var(--white-color);
     padding: 3rem 0;
 }
 .footer .link {
-    color: white;
+    color: var(--white-color);
     font-weight: 600;
     text-decoration: none;
 }
-.footer .link:hover, .footer span {
-    color: var(--main-color);
+.footer .link:hover, .footer span, .fa-icon:hover {
+    color: var(--active-link-color);
 }
 .fa-icon {
-    background-color: var(--footer-icon-color);
+    background-color: var(--icon-bg-color);
     font-size: 1.5rem;
 }
 .fa-icon:hover {
-    background-color: var(--hover-green-color);
+    background-color: var(--hover-blue-color);
 }
 .footer span {
     font-family: 'Salsa', cursive;
-    font-weight: 500;
 }
