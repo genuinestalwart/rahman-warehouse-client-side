@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <footer className='footer text-center'>
             <div>
-                <Link className='link p-2' to='/inventory'>Inventory</Link>
+                <Link className='link p-2' to='/manage-inventory'>Inventory</Link>
                 <Link className='link p-2' to='/blogs'>Blogs</Link>
                 <Link className='link p-2' to='/login'>Log in</Link>
             </div>

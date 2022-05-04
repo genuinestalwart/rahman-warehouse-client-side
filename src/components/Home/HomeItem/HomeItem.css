@@ -1,8 +1,8 @@
-.card {
+.home-card {
     border-color: var(--icon-bg-color);
     border-width: 2px;
 }
-.card:hover {
+.home-card:hover {
     border-color: var(--icon-bg-color);
     outline: var(--icon-bg-color) solid 3px;
 }

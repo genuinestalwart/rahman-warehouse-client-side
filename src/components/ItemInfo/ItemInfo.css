@@ -1,0 +1,11 @@
+.deliver-button, .restock-button {
+    background-color: var(--icon-bg-color);
+    color: black;
+}
+.deliver-button:hover, .restock-button:hover {
+    background-color: var(--main-color);
+    color: var(--active-link-color);
+}
+.restock-label {
+    font-family: 'Salsa', cursive;
+}

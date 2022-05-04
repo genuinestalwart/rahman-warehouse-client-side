@@ -5,6 +5,7 @@ import Blogs from './components/Blogs/Blogs';
 import Banner from './components/Home/Banner/Banner';
 import HomeItems from './components/Home/HomeItems/HomeItems';
 import Inventory from './components/Inventory/Inventory';
+import ItemInfo from './components/ItemInfo/ItemInfo';
 import Login from './components/Login/Login';
 import MyItems from './components/MyItems/MyItems';
 import NotFound from './components/NotFound/NotFound';
@@ -24,7 +25,8 @@ function App() {
 							<HomeItems></HomeItems>
 						</div>
 					}></Route>
-					<Route path='/inventory' element={<Inventory></Inventory>}></Route>
+					<Route path='/manage-inventory' element={<Inventory></Inventory>}></Route>
+					<Route path='/inventory/:id' element={<ItemInfo></ItemInfo>}></Route>
 					<Route path='/add-item' element={<AddItem></AddItem>}></Route>
 					<Route path='/my-items' element={<MyItems></MyItems>}></Route>
 					<Route path='/blogs' element={<Blogs></Blogs>}></Route>

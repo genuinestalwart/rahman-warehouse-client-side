@@ -8,9 +8,7 @@ const HomeItems = () => {
     const [items, setItems] = useState([]);
 
     useEffect(() => {
-        const start = Math.floor(Math.random() * 35);
-
-        fetch(`http://localhost:5000/inventory?start=${start}`)
+        fetch('http://localhost:5000/inventory?start=1')
             .then(res => res.json())
             .then(data => setItems(data));
     }, []);
@@ -27,7 +25,7 @@ const HomeItems = () => {
                 </Row>
             </Container>
 
-            <div className='manage-inventory py-5 text-center'><Link className='link fw-bold p-2 rounded-3 text-decoration-none' to='/inventory'>Manage Inventories</Link></div>
+            <div className='manage-inventory py-5 text-center'><Link className='link fw-bold p-2 rounded-3 text-decoration-none' to='/manage-inventory'>Manage Inventories</Link></div>
         </section>
     );
 };
