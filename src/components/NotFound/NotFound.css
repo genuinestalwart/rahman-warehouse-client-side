@@ -1,0 +1,8 @@
+.back-to-home .link {
+    background-color: var(--blue-white-color);
+    color: var(--black-color);
+}
+.back-to-home .link:hover {
+    background-color: var(--main-color);
+    color: var(--cyan-color);
+}
