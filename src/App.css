@@ -1,8 +1,8 @@
 :root {
     --main-color: #4169E1;
-    --hover-red-color: #EF767A;
-    --hover-blue-color: #3759BF;
     --white-color: #E3E9FB;
-    --icon-bg-color: #849EEC;
-    --active-link-color: #00E6E6;
+    --black-color: #142044;
+    --blue-white-color: #849EEC;
+    --blue-black-color: #3759BF;
+    --cyan-color: #00E6E6;
 }

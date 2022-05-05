@@ -5,17 +5,17 @@
     padding: 0 0.75rem;
 }
 .active {
-    color: var(--active-link-color);
+    color: var(--cyan-color);
 }
 .header .link {
     color: var(--white-color);
 }
 .header .link:hover {
-    color: var(--hover-red-color);
+    color: var(--black-color);
 }
 
 @media only screen and (min-width: 768px) {
     .active {
-        border-bottom: 2px solid var(--active-link-color);
+        border-bottom: 2px solid var(--cyan-color);
     }
 }

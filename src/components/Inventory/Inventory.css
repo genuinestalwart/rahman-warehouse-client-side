@@ -2,12 +2,12 @@
     padding: 0 2rem;
 }
 .add-new-item .link {
-    background-color: var(--icon-bg-color);
-    color: black;
+    background-color: var(--blue-white-color);
+    color: var(--black-color);
 }
 .add-new-item .link:hover {
     background-color: var(--main-color);
-    color: var(--active-link-color);
+    color: var(--cyan-color);
 }
 
 @media only screen and (min-width: 768px) {

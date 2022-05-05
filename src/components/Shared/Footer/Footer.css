@@ -9,14 +9,14 @@
     text-decoration: none;
 }
 .footer .link:hover, .footer span, .fa-icon:hover {
-    color: var(--active-link-color);
+    color: var(--cyan-color);
 }
 .fa-icon {
-    background-color: var(--icon-bg-color);
+    background-color: var(--blue-white-color);
     font-size: 1.5rem;
 }
 .fa-icon:hover {
-    background-color: var(--hover-blue-color);
+    background-color: var(--blue-black-color);
 }
 .footer span {
     font-family: 'Salsa', cursive;

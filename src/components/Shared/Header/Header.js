@@ -4,7 +4,7 @@ import logo from '../../../images/logo.png';
 import { Nav, Navbar } from 'react-bootstrap';
 import CustomLink from '../CustomLink/CustomLink';
 
-const Header = () => {
+const Header = ({ login }) => {
     const style = { backgroundColor: 'var(--main-color)', padding: '0.75rem 0' };
 
     return (
@@ -23,7 +23,12 @@ const Header = () => {
                         <Nav.Link style={style} as={CustomLink} to='/blogs'>Blogs</Nav.Link>
                         <Nav.Link style={style} as={CustomLink} to='/add-item'>Add Item</Nav.Link>
                         <Nav.Link style={style} as={CustomLink} to='/my-items'>My Items</Nav.Link>
-                        <Nav.Link style={style} as={CustomLink} to='/login'>Log in</Nav.Link>
+                        {
+                            login ?
+                                <Nav.Link style={style} as={CustomLink} to='/login'>Log in</Nav.Link>
+                                :
+                                <Nav.Link style={style} as={CustomLink} to='/register'>Register</Nav.Link>
+                        }
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

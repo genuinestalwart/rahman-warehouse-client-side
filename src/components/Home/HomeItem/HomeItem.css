@@ -1,10 +1,10 @@
 .home-card {
-    border-color: var(--icon-bg-color);
+    border-color: var(--blue-white-color);
     border-width: 2px;
 }
 .home-card:hover {
-    border-color: var(--icon-bg-color);
-    outline: var(--icon-bg-color) solid 3px;
+    border-color: var(--blue-white-color);
+    outline: var(--blue-white-color) solid 3px;
 }
 .card-title {
     font-family: 'Salsa', cursive;
@@ -14,6 +14,6 @@ span {
     font-weight: 700;
 }
 .button, .button:hover, .button:focus {
-    background-color: var(--icon-bg-color);
-    color: black;
+    background-color: var(--blue-white-color);
+    color: var(--black-color);
 }

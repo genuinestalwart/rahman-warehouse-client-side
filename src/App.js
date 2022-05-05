@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import AddItem from './components/AddItem/AddItem';
@@ -9,13 +10,16 @@ import ItemInfo from './components/ItemInfo/ItemInfo';
 import Login from './components/Login/Login';
 import MyItems from './components/MyItems/MyItems';
 import NotFound from './components/NotFound/NotFound';
+import Register from './components/Register/Register';
 import Footer from './components/Shared/Footer/Footer';
 import Header from './components/Shared/Header/Header';
 
 function App() {
+	const [login, setLogin] = useState(true);
+
 	return (
 		<div className="App">
-			<Header></Header>
+			<Header login={login}></Header>
 
 			<main>
 				<Routes>
@@ -30,7 +34,8 @@ function App() {
 					<Route path='/add-item' element={<AddItem></AddItem>}></Route>
 					<Route path='/my-items' element={<MyItems></MyItems>}></Route>
 					<Route path='/blogs' element={<Blogs></Blogs>}></Route>
-					<Route path='/login' element={<Login></Login>}></Route>
+					<Route path='/login' element={<Login setLogin={setLogin}></Login>}></Route>
+					<Route path='/register' element={<Register setLogin={setLogin}></Register>}></Route>
 					<Route path='*' element={<NotFound></NotFound>}></Route>
 				</Routes>
 			</main>
