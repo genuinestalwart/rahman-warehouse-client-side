@@ -13,7 +13,7 @@ const HomeItem = ({ homeItem }) => {
 
     return (
         <Col>
-            <Card className='home-card rounded-3 shadow'>
+            <Card className='home-card rounded-3 shadow-lg'>
                 <div className='d-flex justify-content-center py-4'><Card.Img className='w-50' variant="top" src={image} /></div>
                 <hr className='my-0' />
                 <Card.Body>
