@@ -21,7 +21,7 @@ const Login = ({ setLogin }) => {
 
                     <Form.Group className="py-2" controlId="formBasicPassword">
                         <Form.Label className='login-label'>Password</Form.Label>
-                        <Form.Control type="password" placeholder="Password" />
+                        <Form.Control type="password" placeholder="Enter password" />
                     </Form.Group>
 
                     <div className='align-items-center d-flex justify-content-between pt-4'>
