@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Table } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Item from '../Item/Item';
 import './Inventory.css';
 
 const Inventory = () => {
     const [items, setItems] = useState([]);
+    const location = useLocation();
 
     useEffect(() => {
         fetch(`http://localhost:5000/inventory`)
@@ -15,7 +16,7 @@ const Inventory = () => {
 
     return (
         <section className='inventory'>
-            <div className='add-new-item my-5 text-center'><Link className='link fw-bold p-2 rounded-3 text-decoration-none' to='/add-item'>Add New Item</Link></div>
+            <div className='add-new-item my-5 text-center'><Link className='link fw-bold p-2 rounded-3 text-decoration-none' to='/add-item' state={{ from: location }}>Add New Item</Link></div>
 
             <Table className='my-5' striped hover>
                 <thead>

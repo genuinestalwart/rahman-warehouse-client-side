@@ -1,0 +1,13 @@
+.inform-toast-header {
+    background-color: var(--white-color);
+}
+.inform-toast-header h5 {
+    color: var(--black-color);
+    font-family: 'Salsa', cursive;
+}
+.inform-toast-body {
+    background-color: var(--main-color);
+}
+.inform-toast-body p {
+    color: var(--cyan-color);
+}

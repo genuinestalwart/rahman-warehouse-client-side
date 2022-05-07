@@ -7,6 +7,16 @@ h1 {
     font-family: 'Salsa', cursive;
     font-size: 1.5rem;
 }
+.logout-button {
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    color: var(--white-color);
+    font-weight: 700;
+    padding: 0 0.75rem;
+}
+.logout-button:hover {
+    color: var(--black-color);
+}
 .toggle-btn:focus {
     box-shadow: 0 0 0 0.125rem var(--cyan-color);
 }

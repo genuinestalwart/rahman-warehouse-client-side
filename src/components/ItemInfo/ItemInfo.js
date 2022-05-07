@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Card, Col, Form, Row } from 'react-bootstrap';
 import './ItemInfo.css';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useLocation, useParams } from 'react-router-dom';
 import NotFound from '../NotFound/NotFound';
 
 
 const ItemInfo = () => {
     const { id } = useParams();
     const [item, setItem] = useState({});
+    const location = useLocation();
 
     useEffect(() => {
         if (id.length === 24) {
@@ -67,7 +68,7 @@ const ItemInfo = () => {
                                         <div className='text-center'><Button className='border-0 fw-bold my-3 restock-button rounded-3'>restock</Button></div>
                                     </Form>
 
-                                    <div className='manage-inventory text-center'><Link className='d-inline-block link fw-bold p-2 rounded-3 text-decoration-none' to='/manage-inventory'>Manage Inventories</Link></div>
+                                    <div className='manage-inventory text-center'><Link className='d-inline-block link fw-bold p-2 rounded-3 text-decoration-none' to='/manage-inventory' state={{ from: location }}>Manage Inventories</Link></div>
                                 </Card.Body>
                             </div>
                         </Card>

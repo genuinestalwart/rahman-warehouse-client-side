@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Row } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import HomeItem from '../HomeItem/HomeItem';
 import './HomeItems.css';
 
 const HomeItems = () => {
     const [items, setItems] = useState([]);
+    const location = useLocation();
 
     useEffect(() => {
         fetch('http://localhost:5000/inventory?start=1')
@@ -25,7 +26,7 @@ const HomeItems = () => {
                 </Row>
             </Container>
 
-            <div className='manage-inventory py-5 text-center'><Link className='link fw-bold p-2 rounded-3 text-decoration-none' to='/manage-inventory'>Manage Inventories</Link></div>
+            <div className='manage-inventory py-5 text-center'><Link className='link fw-bold p-2 rounded-3 text-decoration-none' to='/manage-inventory' state={{ from: location }}>Manage Inventories</Link></div>
         </section>
     );
 };

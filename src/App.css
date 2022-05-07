@@ -6,3 +6,6 @@
     --blue-black-color: #3759BF;
     --cyan-color: #00E6E6;
 }
+.loading-spinner-container {
+    color: var(--main-color);
+}

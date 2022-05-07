@@ -8,7 +8,7 @@
     font-weight: 600;
     text-decoration: none;
 }
-.footer .link:hover, .footer span, .fa-icon:hover {
+.footer .link:hover, .fa-icon:hover {
     color: var(--cyan-color);
 }
 .fa-icon {
@@ -20,4 +20,5 @@
 }
 .footer span {
     font-family: 'Salsa', cursive;
+    color: var(--black-color);
 }
