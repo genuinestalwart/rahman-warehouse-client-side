@@ -1,4 +1,3 @@
-import { Spinner } from 'react-bootstrap';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
@@ -15,6 +14,7 @@ import Register from './components/Register/Register';
 import Footer from './components/Shared/Footer/Footer';
 import Header from './components/Shared/Header/Header';
 import InformToast from './components/Shared/InformToast/InformToast';
+import LoadingSpinner from './components/Shared/LoadingSpinner/LoadingSpinner';
 import RequireAuth from './components/Shared/RequireAuth/RequireAuth';
 import auth from './firebase.init';
 import useFirebase from './hooks/useFirebase';
@@ -27,12 +27,7 @@ function App() {
 		<div className="App">
 			{
 				loading ?
-					<div className='align-items-center d-flex justify-content-center loading-spinner-container vh-100'>
-						<div className='align-items-center d-flex'>
-							<Spinner className='' animation="border" />
-							<h4 className='fw-bold ms-2 mb-0'>Loading...</h4>
-						</div>
-					</div>
+					<LoadingSpinner height='100vh'></LoadingSpinner>
 					:
 					<div>
 						<Header user={user}></Header>

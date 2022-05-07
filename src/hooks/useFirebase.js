@@ -1,8 +1,6 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 
 const useFirebase = () => {
-    const navigate = useNavigate();
     const [errObj, setErrObj] = useState({});
     const [info, setInfo] = useState('');
     const [email, setEmail] = useState('');
@@ -37,7 +35,6 @@ const useFirebase = () => {
     };
 
     return {
-        navigate,
         errObj, setErrObj,
         info, setInfo,
         email, setEmail,
