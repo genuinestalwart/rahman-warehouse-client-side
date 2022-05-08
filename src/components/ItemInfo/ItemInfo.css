@@ -1,3 +1,6 @@
+.quantity-spinner {
+    font-size: 1rem;
+}
 .deliver-button, .restock-button, .deliver-button:not(:hover), .restock-button:not(:hover) {
     background-color: var(--blue-white-color);
     color: var(--black-color);

@@ -47,7 +47,7 @@ const AddItem = ({ setInfo, setShowToast }) => {
                 email: user.email
             };
 
-            fetch('http://localhost:5000/add-item', {
+            fetch('https://rahman-warehouse-backend.herokuapp.com/add-item', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json',

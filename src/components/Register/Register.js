@@ -53,7 +53,7 @@ const Register = ({ setInfo, setShowToast }) => {
         if (email && password && validEmail && validPass) {
             createUserWithEmailAndPassword(email, password)
                 .then(() => {
-                    fetch('http://localhost:5000/auth', {
+                    fetch('https://rahman-warehouse-backend.herokuapp.com/auth', {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json'

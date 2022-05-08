@@ -4,8 +4,14 @@ import React from 'react';
 import { Button, Card, Col } from 'react-bootstrap';
 import './MyItem.css';
 
-const MyItem = ({ myItem }) => {
-    const { name, image, description, price, quantity, supplier } = myItem;
+const MyItem = ({ myItem, setYesDelete, setItemId, setShowModal }) => {
+    const { _id, name, image, description, price, quantity, supplier } = myItem;
+
+    const handleDelete = () => {
+        setItemId(_id);
+        setYesDelete(false);
+        setShowModal(true);
+    };
 
     return (
         <Col>
@@ -20,7 +26,7 @@ const MyItem = ({ myItem }) => {
                         <p className='my-2'><span>Price:</span> ${price}</p>
                         <p className='my-2 text-truncate'><span>Description:</span> {description}</p>
                     </div>
-                    <Button className='border-0 my-button fw-bold my-2'>Delete <FontAwesomeIcon icon={faTrashCan}></FontAwesomeIcon></Button>
+                    <Button onClick={handleDelete} className='border-0 my-button fw-bold my-2'>Delete <FontAwesomeIcon icon={faTrashCan}></FontAwesomeIcon></Button>
                 </Card.Body>
             </Card>
         </Col>

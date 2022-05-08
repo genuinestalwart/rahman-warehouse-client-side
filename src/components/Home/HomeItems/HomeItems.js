@@ -11,7 +11,7 @@ const HomeItems = () => {
     const location = useLocation();
 
     useEffect(() => {
-        fetch('http://localhost:5000/inventory?start=1')
+        fetch('https://rahman-warehouse-backend.herokuapp.com/inventory?start=1')
             .then(res => res.json())
             .then(data => {
                 setItems(data);
