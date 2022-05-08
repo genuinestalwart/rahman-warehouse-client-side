@@ -1,19 +1,12 @@
-.home-card {
+.my-card {
     border-color: var(--blue-white-color);
     border-width: 2px;
 }
-.home-card:hover {
+.my-card:hover {
     border-color: var(--blue-white-color);
     outline: var(--blue-white-color) solid 3px;
 }
-.card-title {
-    font-family: 'Salsa', cursive;
-    font-weight: 600;
-}
-span {
-    font-weight: 700;
-}
-.home-button, .home-button:hover, .home-button:focus {
+.my-button, .my-button:hover, .my-button:focus {
     background-color: var(--blue-white-color);
     color: var(--black-color);
 }

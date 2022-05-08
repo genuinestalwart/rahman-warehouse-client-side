@@ -53,6 +53,17 @@ const Register = ({ setInfo, setShowToast }) => {
         if (email && password && validEmail && validPass) {
             createUserWithEmailAndPassword(email, password)
                 .then(() => {
+                    fetch('http://localhost:5000/auth', {
+                        method: 'POST',
+                        headers: {
+                            'content-type': 'application/json'
+                        },
+                        body: JSON.stringify({ email })
+                    })
+                        .then(res => res.json())
+                        .then(({ accessToken }) => {
+                            localStorage.setItem('accessToken', accessToken);
+                        });
                     if (!epError) {
                         handleVerify(epUser);
                     }
@@ -65,7 +76,10 @@ const Register = ({ setInfo, setShowToast }) => {
     const handleVerify = (newUser) => {
         sendEmailVerification(newUser)
             .then(() => {
-                setInfo('Email Verification!');
+                setInfo({
+                    header: 'Email Verification!',
+                    body: 'Mail has been sent. Don\'t forget to check your spam folder.'
+                });
                 setShowToast(true);
             });
     };

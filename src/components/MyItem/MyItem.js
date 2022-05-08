@@ -1,19 +1,15 @@
+import { faTrashCan } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import './HomeItem.css';
 import { Button, Card, Col } from 'react-bootstrap';
-import { useNavigate } from 'react-router-dom';
+import './MyItem.css';
 
-const HomeItem = ({ homeItem }) => {
-    const { _id, name, image, description, price, quantity, supplier } = homeItem;
-    const navigate = useNavigate();
-
-    const handleItemId = () => {
-        navigate(`/inventory/${_id}`);
-    };
+const MyItem = ({ myItem }) => {
+    const { name, image, description, price, quantity, supplier } = myItem;
 
     return (
         <Col>
-            <Card className='home-card rounded-3 shadow-lg'>
+            <Card className='my-card rounded-3 shadow'>
                 <div className='d-flex justify-content-center py-4'><Card.Img className='w-50' variant="top" src={image} /></div>
                 <hr className='my-0' />
                 <Card.Body>
@@ -24,11 +20,11 @@ const HomeItem = ({ homeItem }) => {
                         <p className='my-2'><span>Price:</span> ${price}</p>
                         <p className='my-2 text-truncate'><span>Description:</span> {description}</p>
                     </div>
-                    <Button onClick={handleItemId} className='border-0 home-button fw-bold my-2'>Update</Button>
+                    <Button className='border-0 my-button fw-bold my-2'>Delete <FontAwesomeIcon icon={faTrashCan}></FontAwesomeIcon></Button>
                 </Card.Body>
             </Card>
         </Col>
     );
 };
 
-export default HomeItem;
+export default MyItem;

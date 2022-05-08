@@ -1,3 +1,4 @@
+import { signOut } from 'firebase/auth';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
@@ -23,6 +24,10 @@ function App() {
 	const [user, loading] = useAuthState(auth);
 	const { info, setInfo, showToast, setShowToast } = useFirebase();
 
+	const logOut = () => {
+		signOut(auth);
+	};
+
 	return (
 		<div className="App">
 			{
@@ -30,7 +35,7 @@ function App() {
 					<LoadingSpinner height='100vh'></LoadingSpinner>
 					:
 					<div>
-						<Header user={user}></Header>
+						<Header user={user} logOut={logOut}></Header>
 
 						<main>
 							<InformToast info={info} showToast={showToast} setShowToast={setShowToast}></InformToast>
@@ -43,8 +48,8 @@ function App() {
 								}></Route>
 								<Route path='/manage-inventory' element={<RequireAuth><Inventory></Inventory></RequireAuth>}></Route>
 								<Route path='/inventory/:id' element={<RequireAuth><ItemInfo></ItemInfo></RequireAuth>}></Route>
-								<Route path='/add-item' element={<RequireAuth><AddItem></AddItem></RequireAuth>}></Route>
-								<Route path='/my-items' element={<RequireAuth><MyItems></MyItems></RequireAuth>}></Route>
+								<Route path='/add-item' element={<RequireAuth><AddItem setInfo={setInfo} setShowToast={setShowToast}></AddItem></RequireAuth>}></Route>
+								<Route path='/my-items' element={<RequireAuth><MyItems logOut={logOut}></MyItems></RequireAuth>}></Route>
 								<Route path='/blogs' element={<Blogs></Blogs>}></Route>
 								<Route path='/login' element={<Login setInfo={setInfo} setShowToast={setShowToast}></Login>}></Route>
 								<Route path='/register' element={<Register setInfo={setInfo} setShowToast={setShowToast}></Register>}></Route>

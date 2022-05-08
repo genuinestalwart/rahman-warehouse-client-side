@@ -3,17 +3,11 @@ import './Header.css';
 import logo from '../../../images/logo.png';
 import { Nav, Navbar } from 'react-bootstrap';
 import CustomLink from '../CustomLink/CustomLink';
-import { signOut } from 'firebase/auth';
-import auth from '../../../firebase.init';
 import { useLocation } from 'react-router-dom';
 
-const Header = ({ user }) => {
+const Header = ({ user, logOut }) => {
     const style = { backgroundColor: 'var(--main-color)', padding: '0.75rem 0' };
     const location = useLocation();
-
-    const logOut = () => {
-        signOut(auth);
-    };
 
     return (
         <header className='align-items-center d-flex header justify-content-between'>

@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const useFirebase = () => {
     const [errObj, setErrObj] = useState({});
-    const [info, setInfo] = useState('');
+    const [info, setInfo] = useState({});
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [validEmail, setValidEmail] = useState(true);
