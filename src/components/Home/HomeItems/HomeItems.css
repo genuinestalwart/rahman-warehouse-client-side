@@ -2,7 +2,7 @@ h2 {
     font-family: 'Salsa', cursive;
 }
 .home-items-container {
-    padding: 0 2rem;
+    padding: 0 4rem;
 }
 .manage-inventory .link {
     background-color: var(--blue-white-color);

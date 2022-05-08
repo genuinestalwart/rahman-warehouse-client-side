@@ -4,7 +4,9 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import AddItem from './components/AddItem/AddItem';
 import Blogs from './components/Blogs/Blogs';
+import AboutUs from './components/Home/AboutUs/AboutUs';
 import Banner from './components/Home/Banner/Banner';
+import ContactUs from './components/Home/ContactUs/ContactUs';
 import HomeItems from './components/Home/HomeItems/HomeItems';
 import Inventory from './components/Inventory/Inventory';
 import ItemInfo from './components/ItemInfo/ItemInfo';
@@ -44,6 +46,8 @@ function App() {
 									<div>
 										<Banner></Banner>
 										<HomeItems></HomeItems>
+										<AboutUs></AboutUs>
+										<ContactUs></ContactUs>
 									</div>
 								}></Route>
 								<Route path='/manage-inventory' element={<RequireAuth><Inventory></Inventory></RequireAuth>}></Route>

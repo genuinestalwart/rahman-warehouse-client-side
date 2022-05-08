@@ -1,0 +1,12 @@
+.about-us-image {
+    width: 50%;
+}
+.about-us-text {
+    width: 50%;
+}
+.about-us-text h4 {
+    font-family: 'Salsa', cursive;
+}
+.border-left {
+    border-left: 3px solid var(--blue-white-color);
+}

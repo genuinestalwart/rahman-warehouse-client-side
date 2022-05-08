@@ -1,0 +1,14 @@
+.contact-form-container {
+    width: 40%;
+}
+.contact-label {
+    font-family: 'Salsa', cursive;
+}
+.contact-button, .contact-button:not(:hover) {
+    background-color: var(--blue-white-color);
+    color: var(--black-color);
+}
+.contact-button:hover {
+    background-color: var(--main-color);
+    color: var(--cyan-color);
+}
