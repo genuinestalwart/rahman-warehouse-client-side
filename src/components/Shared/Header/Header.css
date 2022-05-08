@@ -12,7 +12,6 @@ h1 {
     border-bottom: 2px solid transparent;
     color: var(--white-color);
     font-weight: 700;
-    padding: 0 0.75rem;
 }
 .logout-button:hover {
     color: var(--black-color);

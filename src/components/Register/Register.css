@@ -1,5 +1,5 @@
 .register-form-container {
-    width: 40%;
+    width: 85%;
 }
 .register-label {
     font-family: 'Salsa', cursive;
@@ -14,4 +14,10 @@
 .register-button:hover {
     background-color: var(--main-color);
     color: var(--cyan-color);
+}
+
+@media only screen and (min-width: 768px) {
+    .register-form-container {
+        width: 40%;
+    }
 }

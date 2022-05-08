@@ -1,6 +1,3 @@
-.contact-form-container {
-    width: 40%;
-}
 .contact-label {
     font-family: 'Salsa', cursive;
 }
@@ -11,4 +8,10 @@
 .contact-button:hover {
     background-color: var(--main-color);
     color: var(--cyan-color);
+}
+
+@media only screen and (min-width: 768px) {
+    .contact-form-container {
+        width: 40%;
+    }
 }

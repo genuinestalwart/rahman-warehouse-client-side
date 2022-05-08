@@ -1,5 +1,5 @@
 .add-item-form-container {
-    width: 40%;
+    width: 85%;
 }
 .add-item-label {
     font-family: 'Salsa', cursive;
@@ -11,4 +11,10 @@
 .add-item-button:hover {
     background-color: var(--main-color);
     color: var(--cyan-color);
+}
+
+@media only screen and (min-width: 768px) {
+    .add-item-form-container {
+        width: 40%;
+    }
 }

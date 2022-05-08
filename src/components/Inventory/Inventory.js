@@ -46,7 +46,7 @@ const Inventory = () => {
                 loading ?
                     <LoadingSpinner height='calc(100vh - 4rem)'></LoadingSpinner>
                     : items.length ?
-                        <Table className='my-5' striped hover>
+                        <Table className='my-5' striped hover responsive>
                             <thead>
                                 <tr>
                                     <th></th>

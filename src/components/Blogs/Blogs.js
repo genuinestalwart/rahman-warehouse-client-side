@@ -6,7 +6,7 @@ const Blogs = () => {
     return (
         <section>
             <div className='p-5'>
-                <Row className='gx-5' xs={1} md={4}>
+                <Row className='g-5' xs={1} md={4}>
                     <Col>
                         <Card className='h-100 rounded-3 shadow'>
                             <Card.Body className='d-flex flex-column justify-content-between'>

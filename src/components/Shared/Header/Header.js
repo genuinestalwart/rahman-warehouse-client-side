@@ -16,7 +16,7 @@ const Header = ({ user, logOut }) => {
                 <h1 className='fw-bold m-0'>Rahman Warehouse</h1>
             </div>
 
-            <Navbar className='d-flex h-100 justify-content-start py-0' collapseOnSelect expand="md">
+            <Navbar className='d-flex h-100 justify-content-end py-0' collapseOnSelect expand="md">
                 <div className='align-items-center d-flex h-100 pe-2'><Navbar.Toggle className='p-2 toggle-btn' aria-controls="responsive-navbar-nav" /></div>
                 <Navbar.Collapse className='h-100' id="responsive-navbar-nav">
                     {
@@ -27,7 +27,7 @@ const Header = ({ user, logOut }) => {
                                 <Nav.Link style={style} as={CustomLink} to='/manage-inventory' state={{ from: location }}>Inventory</Nav.Link>
                                 <Nav.Link style={style} as={CustomLink} to='/add-item' state={{ from: location }}>Add Item</Nav.Link>
                                 <Nav.Link style={style} as={CustomLink} to='/my-items' state={{ from: location }}>My Items</Nav.Link>
-                                <button onClick={logOut} className='bg-transparent border-0 logout-button'>Log out</button>
+                                <button onClick={logOut} className='border-0 logout-button' style={style}>Log out</button>
                             </Nav>
                             :
                             <Nav className='d-flex h-100 w-100'>

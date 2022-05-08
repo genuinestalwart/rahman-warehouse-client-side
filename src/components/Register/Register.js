@@ -117,7 +117,7 @@ const Register = ({ setInfo, setShowToast }) => {
                                     </Form.Group>
 
                                     <div className='align-items-center d-flex justify-content-between pt-4'>
-                                        <Link className='underlined' to='/login' state={{ from: location }}>Don't have an account?</Link>
+                                        <Link className='underlined' to='/login' state={{ from: location }}>Already have an account?</Link>
                                         <Button onClick={handleRegister} className='border-0 fw-bold register-button'>Register</Button>
                                     </div>
                                 </Form>

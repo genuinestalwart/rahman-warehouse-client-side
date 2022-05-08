@@ -123,7 +123,7 @@ const Login = ({ setInfo, setShowToast }) => {
                                     </Form.Group>
 
                                     <div className='align-items-center d-flex justify-content-between pt-4'>
-                                        <Link className='underlined' to='/register' state={{ from: location }}>Already have an account?</Link>
+                                        <Link className='underlined' to='/register' state={{ from: location }}>Don't have an account?</Link>
                                         <Button onClick={handleLogin} type="submit" className='border-0 fw-bold login-button'>Log in</Button>
                                     </div>
                                 </Form>

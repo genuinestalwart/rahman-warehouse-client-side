@@ -4,10 +4,10 @@ import './AboutUs.css';
 
 const AboutUs = () => {
     return (
-        <section className='px-5'>
+        <section className='px-md-5'>
             <h2 className='fw-bold text-center'>About Us</h2>
 
-            <div className='d-flex justify-content-center'>
+            <div className='d-md-flex justify-content-center'>
                 <div className='about-us-image d-flex justify-content-center'><img className='w-75' src={aboutUsImage} alt="about us" /></div>
                 <div className='about-us-text align-items-center d-flex'>
                     <div className='border-left p-5'>

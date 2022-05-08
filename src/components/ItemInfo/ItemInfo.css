@@ -1,3 +1,6 @@
+.item-info-image {
+    padding: 2rem 0;
+}
 .quantity-spinner {
     font-size: 1rem;
 }
@@ -11,4 +14,10 @@
 }
 .restock-label {
     font-family: 'Salsa', cursive;
+}
+
+@media only screen and (min-width: 768px) {
+    .item-info-image {
+        padding: 0;
+    }
 }

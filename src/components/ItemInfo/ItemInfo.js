@@ -68,10 +68,10 @@ const ItemInfo = () => {
                         <NotFound></NotFound>
                         : <div className='d-flex justify-content-center py-4'>
                             <div className='h-75 my-4 w-75'>
-                                <Row className='gx-5' xs={1} md={3}>
+                                <Row className='g-5' xs={1} md={3}>
                                     <Col>
                                         <Card className='h-100 rounded-3 shadow'>
-                                            <div className='align-items-center d-flex h-100 justify-content-center'><Card.Img className='w-75' src={image} /></div>
+                                            <div className='align-items-center d-flex h-100 item-info-image justify-content-center'><Card.Img className='w-75' src={image} /></div>
                                         </Card>
                                     </Col>
 
